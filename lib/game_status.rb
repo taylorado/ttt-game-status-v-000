@@ -45,7 +45,7 @@ def full?(board)
   if board.count("X") + board.count("O") == 9
     return true
   else
-    return false
+     false
   end
 end
 
@@ -53,7 +53,7 @@ def draw?(board)
   if over?(board) && !won?(board)
     return true
   else
-    return false
+     false
   end
 end
 
@@ -69,6 +69,6 @@ def winner(board)
   if won?(board)
       return board[won?(board)[0]]
     else
-       return false
+        false
     end
 end
