@@ -20,7 +20,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_index|
-    puts win_index
+    puts win_index[0]
+    puts "#{win_index[1]}"
     if board[win_index[0]] == "X" && board[win_index[1]] == "X" && board[win_index[2]] == "X"
     puts "Game won in positions :#{win_index}"
     return win_index
