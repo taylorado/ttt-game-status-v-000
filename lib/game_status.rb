@@ -19,9 +19,9 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_index_1, win_index_2, win_index_3|
+  WIN_COMBINATIONS.each do |win_index|
 
-    if board[win_index_1, win_index_2, win_index_3].count("X") == 3
+    if board[win_index[0]] == "X" && board[win_index[1]] == "X" && board[win_index[2]] == "X"
       puts "Game won at position: #{win_index}"
       return win_index
     else
