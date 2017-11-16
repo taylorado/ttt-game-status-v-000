@@ -25,6 +25,7 @@ def won?(board)
     return win_index
   else
     return false
+  end
 end
 end
 
