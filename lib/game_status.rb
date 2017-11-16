@@ -8,9 +8,9 @@ end
 
 def won?(board)
   if board([0,1,2]) == WIN_COMBINATIONS [1]
-    return 
+    return
   else
-    return false 
+    return false
   end
 end
 
