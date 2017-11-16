@@ -13,14 +13,15 @@ WIN_COMBINATIONS = [
   [1,4,7],
   [2,5,8],
   [0,4,8],
-  [6,4,2]
+  [2,4,6]
 
 ]
 
+
 def won?(board)
-  WIN_COMBINATIONS.each do |win_position|
-  if win_position == ("X") || win_position == ("O")
-    puts "Game won in #{win_position}"
+  WIN_COMBINATIONS.each do |win_index|
+  if win_position == ("X") 
+    puts "Game won in #{win_index}"
     return true
   else
     return false
