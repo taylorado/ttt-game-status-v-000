@@ -25,7 +25,7 @@ def won?(board)
     win_index_3 = win_index[2]
     if board[win_index_1] == "X" && board[win_index_2] == "X" && board[win_index_3] == "X"
       puts "Game won at position: #{win_index}"
-      return true
+      return win_index
     else
       return false
     end
