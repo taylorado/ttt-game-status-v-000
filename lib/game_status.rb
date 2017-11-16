@@ -34,8 +34,8 @@ def won?(board)
           #  puts "Game won in position: #{win_index}"
 
         elsif full?(board)
-            return false
-          else false
+            return false     # whats the difference between "else return false" and "else false" ???
+        else false
         end
       end
     end
@@ -53,6 +53,8 @@ end
 def draw?(board)
   if full?(board) && !(won?(board))
     return true
+  elsif !full?(board) && won?(board)
+    return false
 
   else
     return false
