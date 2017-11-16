@@ -19,7 +19,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_position|
-  if win_position.all == ("X" || "O")
+  if win_position == ("X") || win_position == ("O")
+    puts win_position
     return true
   else
     return false
