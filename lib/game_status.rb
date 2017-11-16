@@ -28,7 +28,7 @@ def won?(board)
       puts "Game won in position: #{win_index}"
       return win_index
 
-  else
+  elsif full?(board)
      false
     end
   end
