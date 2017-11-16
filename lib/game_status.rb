@@ -20,11 +20,16 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_index|
-  if win_index.count("X") == 3
-    puts "Game won in #{win_index}"
-    return true
-  else
-    return false
+    if board[win_index] == "X"
+      puts "Game won at #{win_index}"
+      return true
+    else
+      return false
+
   end
+
 end
-end
+
+
+def full?(board)
+  
