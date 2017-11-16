@@ -7,8 +7,10 @@ end
 
 
 def won?(board)
-  if !board.any?
-    return false
+  if board([0,1,2]) == WIN_COMBINATIONS [1]
+    return 
+  else
+    return false 
   end
 end
 
