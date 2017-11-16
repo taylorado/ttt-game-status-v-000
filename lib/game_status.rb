@@ -31,7 +31,7 @@ def won?(board)
     elsif full?(board)
       return false
     else
-      
+
 
       false
     end
