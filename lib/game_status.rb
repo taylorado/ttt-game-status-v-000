@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if board([0,1,2]) == WIN_COMBINATIONS[1]
+  if board([0,1,2]) == WIN_COMBINATIONS[0]
     return
   else
     return false
