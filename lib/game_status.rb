@@ -27,12 +27,12 @@ def won?(board)
         position_2 = board[win_index[1]]
         position_3 = board[win_index[2]]
         if (position_1 == "X" && position_2 == "X" && position_3 == "X")
-        #  puts "Game won in position: #{win_index}"
+          #  puts "Game won in position: #{win_index}"
           return win_index
         elsif  (position_1 == "O" && position_2 == "O" && position_3 == "O")
           return win_index
-
-
+          #  puts "Game won in position: #{win_index}"
+  
         else
           false
         end
@@ -42,7 +42,7 @@ end
 
 
 def full?(board)
-  if board.count("X" || "O") == 9
+  if board.count("X") + board.count("O") == 9
     return true
   else
     return false
