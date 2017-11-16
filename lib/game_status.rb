@@ -19,7 +19,7 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-  if board.count("X"||"O") == 0     # initial check for an empty board
+  if board.count("X") + board.count("O") == 0     # initial check for an empty board
     return false
   else
       WIN_COMBINATIONS.each do |win_index|
