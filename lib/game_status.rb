@@ -20,7 +20,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_index|
-    win_index.each do puts "hello #{win_index}"
+    win_index.each do |check| puts "hello #{check}"
     end
     if board[win_index].count("X") == 3
       puts "Game won at positions: #{win_index}"
