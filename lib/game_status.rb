@@ -20,10 +20,10 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_index|
-    
-  
+
+
       puts "Game won at position: #{win_index}"
-    
+
   end
 end
 
