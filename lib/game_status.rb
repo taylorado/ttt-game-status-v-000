@@ -21,7 +21,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   if board.count("X") + board.count("O") == 0     # initial check for an empty board
     return false
-  elsif board.count("X") + board.count("O") >= 5
+  else
       WIN_COMBINATIONS.each do |win_combination|
         position_1 = board[win_combination[0]]
         position_2 = board[win_combination[1]]
@@ -33,9 +33,9 @@ def won?(board)
           return win_combination
         elsif full?(board)
             return false     # whats the difference between "else return false" and "else false" ???
+        else   false
         end
-      else   false
-              end
+      end
     end
 end
 
