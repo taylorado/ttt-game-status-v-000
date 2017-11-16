@@ -21,7 +21,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |win_index|
 
-    if board[win_index[0]] == "X" && board[win_index[1]] == "X" && board[win_index[2]] == "X"
+    if board.values_at(win_index) == "X"
       puts "Game won at position: #{win_index}"
       return win_index
     else
