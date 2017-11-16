@@ -50,7 +50,7 @@ def full?(board)
 end
 
 def draw?(board)
-  if full?(board) && !(won?(board))
+  if full?(board) && !won?(board)
     return true
   elsif !full?(board) && won?(board)
     return false
@@ -61,7 +61,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if won?(board) || draw?(board)
+  if (won?(board) || draw?(board))
     return true
   elsif board.count("X"||"O") <= 9 && !won?(board)
     return false
