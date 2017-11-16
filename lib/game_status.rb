@@ -37,7 +37,7 @@ def won?(board)
 
         elsif full?(board)
             return false     # whats the difference between "else return false" and "else false" ???
-        else false
+        else  return false
         end
       end
     end
