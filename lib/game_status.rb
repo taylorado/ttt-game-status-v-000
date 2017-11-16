@@ -22,13 +22,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |win_index|
     win_index.each do |check| puts "hello #{win_index.count}"
     end
-    if board[win_index].count("X") == 3
-      puts "Game won at positions: #{win_index}"
-      return true
-    else
-      return false
-
-    end
+  
   end
 end
 
