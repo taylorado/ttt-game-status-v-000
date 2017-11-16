@@ -30,7 +30,7 @@ def won?(board)
 
     elsif full?(board)
       return false
-    else
+    elsif board.count ("" || " ") == 9
       return false
     end
   end
