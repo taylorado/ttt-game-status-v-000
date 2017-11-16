@@ -11,7 +11,7 @@ def won?(board)
     return false
   end
 end
-  
+
 WIN_COMBINATIONS = [
   [0,1,2]
   [3,4,5]
@@ -21,5 +21,5 @@ WIN_COMBINATIONS = [
   [2,5,8]
   [0,4,8]
   [6,4,2]
-  
+
 ]
