@@ -28,10 +28,8 @@ def won?(board)
       puts "Game won in position: #{win_index}"
       return win_index
 
-    elsif full?(board)
-      return false
-    elsif board.count ("" || " ") == 9
-      return false
+  else
+    return false
     end
   end
 end
