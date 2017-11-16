@@ -33,4 +33,9 @@ end
 
 
 def full?(board)
+  if board.count(" " || "") == 0
+    return true
+  else
+    return false
+  end
 end
