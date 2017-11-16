@@ -19,7 +19,7 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-  if board.count(" " || "") == 9
+  if full?(board)
     return false
   else
       WIN_COMBINATIONS.each do |win_index|
@@ -39,7 +39,7 @@ end
 
 
 def full?(board)
-  if board.count(" " || "") == 0
+  if board.count("X" || "O") == 9
     return true
   else
     return false
