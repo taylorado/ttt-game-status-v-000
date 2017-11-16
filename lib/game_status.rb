@@ -26,7 +26,10 @@ def won?(board)
     if (position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O")
       puts "Game won in position: #{win_index}"
       return win_index
+    elsif full?(board)
+      return false
     else
+
       false
     end
   end
