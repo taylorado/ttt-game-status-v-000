@@ -31,7 +31,7 @@ def won?(board)
           return win_index
 
         else
-          false
+        return  false
         end
       end
     end
