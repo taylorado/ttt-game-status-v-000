@@ -22,7 +22,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |win_index|
     puts "why #{win_index}"
 
-    if board.values_at(win_index).count("X") == 3
+    if (board.values_at(win_index)).count("X") == 3
       puts "Game won at position: #{win_index}"
       return win_index
     else
