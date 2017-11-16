@@ -5,15 +5,6 @@ end
 
 # Define your WIN_COMBINATIONS constant
 
-
-def won?(board)
-  if board([0,1,2]) == WIN_COMBINATIONS [1]
-    return
-  else
-    return false
-  end
-end
-
 WIN_COMBINATIONS = [
   [0,1,2],
   [3,4,5],
@@ -25,3 +16,13 @@ WIN_COMBINATIONS = [
   [6,4,2]
 
 ]
+
+def won?(board)
+  if board([0,1,2]) == WIN_COMBINATIONS[1]
+    return
+  else
+    return false
+  end
+end
+
+
