@@ -34,7 +34,7 @@ def won?(board)
           #  puts "Game won in position: #{win_index}"
 
         else
-          false
+            return false
         end
       end
     end
