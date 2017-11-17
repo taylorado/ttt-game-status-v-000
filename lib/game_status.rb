@@ -38,8 +38,6 @@ end
 def full?(board)
   if board.count("X") + board.count("O") == 9
     return true
-#  else
-#     false
   end
   false
 end
@@ -50,8 +48,9 @@ def draw?(board)
   elsif full?(board)
     return true
   else
-    return false
+#    return false
   end
+  false
 end
 
 def over?(board)
