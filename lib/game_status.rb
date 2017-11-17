@@ -31,7 +31,7 @@ def won?(board)
           return win_combination
         elsif full?(board)
            return false
-        else    false
+      #  else    false
         end
       end
     end
