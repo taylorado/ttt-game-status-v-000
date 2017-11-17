@@ -30,7 +30,7 @@ def won?(board)
 
           return win_combination
         elsif full?(board)
-           return false     # whats the difference between "else return false" and "else false" ???
+           return false     
         else    false
         end
       end
@@ -48,10 +48,10 @@ def full?(board)
 end
 
 def draw?(board)
-  if won?(board)
-     false
-  elsif full?(board)
-    return true
+  if !won?(board) && full?(board)
+     true
+  elsif won?(board)
+    return false
   else
     return false
   end
