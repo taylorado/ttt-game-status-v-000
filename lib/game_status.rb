@@ -30,10 +30,10 @@ def won?(board)
 
            win_combination
         elsif full?(board)
-            false    
+            false
         end
       else    false
-        
+
       end
     end
 end
