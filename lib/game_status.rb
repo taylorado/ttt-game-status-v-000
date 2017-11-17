@@ -20,7 +20,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   if board.count("X") + board.count("O") == 0     # initial check for a empty board
-    return false
+     false
   else
       WIN_COMBINATIONS.each do |win_combination|
         position_1 = board[win_combination[0]]
